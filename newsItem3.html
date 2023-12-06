@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesMain.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/x-icon" href="./source/ico.png">
+    <title>Погода</title>
+</head>
+<body>
+    <header>
+        <img src="./source/logo.png" class="logo">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./today.html">Сегодня</a></li><hr>
+            <li><a href="./week.html">Неделя</a></li><hr>
+            <li><a href="./month.html">Месяц</a></li><hr>
+            <li><a href="./news.html">Новости</a></li><hr>
+            <li><a href="./order.html">Заказать услугу</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navBurger">
+        <div class="navContainer">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="menu-items">
+              <li><a href="./today.html">Сегодня</a></li>
+              <li><a href="./week.html">Неделя</a></li>
+              <li><a href="./month.html">Месяц</a></li>
+              <li><a href="./news.html">Новости</a></li>
+              <li><a href="./order.html">Заказать услугу</a></li>
+            </div>
+            <div class="menuHamburgerLines">
+              <span class="HamburgerLine line1"></span>
+              <span class="HamburgerLine line2"></span>
+              <span class="HamburgerLine line3"></span>
+            </div>  
+        </div>
+    </nav>
+
+    <main>
+        <div class="news-container">
+            <h2 class="newsTitle">Москвичам рассказали о погоде в воскресенье</h2>
+            <img src="https://www.m24.ru/b/d/nAgWUB67nUJkzJ7jP6aC_5PznYbt-dvtg32Qhv2YqzbZJC3PU2mcy3ou4cNb8QfTuNGV_CeILNx_SL-4hSMhMXXfqDgJqgjJnSrxUBPiuy9YKH1Ypyom2ybiaByXQz5QEreaOfg=JjBrJTeDHUnN94EVkV-idA.jpg" alt="Погода в воскресенье" class="news-image">
+            <p class="newsText">В воскресенье жителям Москвы предстоит переменчивая погода, сообщают синоптики. Ожидается, что небо будет покрыто переменной облачностью, временами возможен небольшой дождь. Температура воздуха будет держаться на уровне +15...+17 градусов Цельсия, что делает погоду довольно прохладной для середины мая.</p>
+            <p class="newsText">Кроме того, ветер будет слабым и переменным, что также может повлиять на комфортность пребывания на улице. Из-за этого синоптики рекомендуют жителям столицы готовиться к переменчивой погоде и иметь при себе зонты, чтобы быть готовыми к возможному непредвиденному дождю.</p>
+            <p class="newsText">Такая погода может создать определенные неудобства для горожан, особенно для тех, кто планирует провести время на открытом воздухе. Поэтому жителям Москвы стоит быть готовыми к изменениям в погоде и подготовиться к возможным дождям.</p>
+            <p class="newsText">Тем не менее, такая погода может быть благоприятной для тех, кто любит прохладные и освежающие дни. В такую погоду можно провести время на прогулке, наслаждаясь свежим воздухом и прохладой.</p>
+            <p class="newsText">Таким образом, в воскресенье жителям Москвы стоит быть готовыми к переменчивой погоде, иметь при себе зонты и выбирать соответствующую одежду, чтобы комфортно провести время на улице.</p>
+
+            <div id="likeSection" class="likeSection">
+                <img id="likeBtn" src="./source/like.png"></button>
+                <p><span id="likeCount">10</span></p>
+            </div>
+        </div>
+
+        <script src="scriptNewsLikes.js"></script>
+
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="social-buttons">
+            <div class="button">
+                <button class="sub-button twitter"></button>
+                <img src="./source/twitter_ico.png">
+            </div>
+            <div class="button">
+                <button class="sub-button vk"></button>
+                <img src="./source/vk_ico.png">
+            </div>
+            <div class="button">
+                <button class="sub-button youtube"></button>
+                <img src="./source/youtube_ico.png">
+            </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesMain.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/x-icon" href="./source/ico.png">
+    <title>Погода</title>
+</head>
+<body>
+    <header>
+        <img src="./source/logo.png" class="logo">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./today.html">Сегодня</a></li><hr>
+            <li><a href="./week.html">Неделя</a></li><hr>
+            <li><a href="./month.html">Месяц</a></li><hr>
+            <li><a href="./news.html">Новости</a></li><hr>
+            <li><a href="./order.html">Заказать услугу</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navBurger">
+        <div class="navContainer">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="menu-items">
+              <li><a href="./today.html">Сегодня</a></li>
+              <li><a href="./week.html">Неделя</a></li>
+              <li><a href="./month.html">Месяц</a></li>
+              <li><a href="./news.html">Новости</a></li>
+              <li><a href="./order.html">Заказать услугу</a></li>
+            </div>
+            <div class="menuHamburgerLines">
+              <span class="HamburgerLine line1"></span>
+              <span class="HamburgerLine line2"></span>
+              <span class="HamburgerLine line3"></span>
+            </div>  
+        </div>
+    </nav>
+
+    <main>
+        <div class="news-container">
+            <h2 class="newsTitle">На Камчатке штормовая погода</h2>
+            <img src="https://i.dailymail.co.uk/1s/2019/03/16/16/11078622-6816361-image-a-12_1552753495129.jpg" alt="На Камчатке штормовая погода" class="news-image">
+            <p class="newsText">На Камчатке ожидается штормовая погода, сообщают местные синоптики. Сильный ветер и обильные осадки приведут к значительному ухудшению погодных условий в регионе.</p>
+            <p class="newsText">Ожидается, что скорость ветра достигнет 25-30 м/с, что может вызвать значительные неудобства для жителей и туристов. Кроме того, прогнозируется обильный дождь, который может привести к возможным наводнениям и затоплениям на низких участках местности.</p>
+            <p class="newsText">Синоптики рекомендуют жителям и гостям региона быть предельно осторожными и избегать выхода на улицу, если это необходимо. Также рекомендуется принимать меры предосторожности при передвижении по дорогам, так как ухудшение видимости и скользкие дорожные условия могут привести к авариям.</p>
+            <p class="newsText">Такая погода может создать серьезные трудности для жителей и туристов, поэтому рекомендуется быть готовыми к возможным последствиям и следить за предупреждениями местных властей.</p>
+            <p class="newsText">Тем не менее, такая погода может быть благоприятной для любителей экстремальных видов спорта, таких как серфинг или виндсерфинг. Они могут воспользоваться этим временем для занятий своим хобби и наслаждаться адреналиновым опытом.</p>
+            <p class="newsText">Таким образом, на Камчатке ожидается штормовая погода, которая может вызвать серьезные неудобства для жителей и туристов. Рекомендуется быть предельно осторожными и следить за предупреждениями местных властей, чтобы избежать возможных неприятностей.</p>
+
+            <div id="likeSection" class="likeSection">
+                <img id="likeBtn" src="./source/like.png"></button>
+                <p><span id="likeCount">10</span></p>
+            </div>
+        </div>
+
+        <script src="scriptNewsLikes.js"></script>
+
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="social-buttons">
+            <div class="button">
+                <button class="sub-button twitter"></button>
+                <img src="./source/twitter_ico.png">
+            </div>
+            <div class="button">
+                <button class="sub-button vk"></button>
+                <img src="./source/vk_ico.png">
+            </div>
+            <div class="button">
+                <button class="sub-button youtube"></button>
+                <img src="./source/youtube_ico.png">
+            </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

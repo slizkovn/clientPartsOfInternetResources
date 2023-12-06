@@ -1,0 +1,126 @@
+.mainContainer{
+  margin-top: 2%;
+  height: 100%; 
+  width: 100%; 
+  text-align: center;
+  position: relative;
+}
+
+.todayInfo {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  width: 300px;
+  border-radius: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.todayInfo h2 {
+  top: 5%;
+  left: 5%;
+}
+
+.todayInfo p{
+}
+
+
+.precipitation{
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  background-image: url('./source/precipitation.jpg');
+  background-size: cover;
+}
+
+.earthAndSun {
+  margin: 0 auto;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.earth {
+  width: 50px;
+  height: 50px;
+  background-image: url('./source/earth.png');
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: 125px;
+  top: 125px;
+}
+
+.sun {
+  width: 50px;
+  height: 50px;
+  background-image: url('./source/sun.png');
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.nimbus {
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  border-top: 2px solid black;
+  left: 50px;
+  top: 50px;
+}
+
+#sunStartTime{
+  position: absolute;
+  left: 30px;
+  top: 125px;
+}
+
+#sunEndTime{
+  position: absolute;
+  left: 220px;
+  top: 125px;
+}
+
+
+@media screen and (max-width: 1100px){
+  .todayInfo {
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .precipitation {
+    width: 100%;
+    height: 500px;
+  }
+
+  .earthAndSun {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .earthAndSunElements {
+    position: absolute;
+    margin-left: 30%;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,676 @@
+body {
+  background-color: #99e6f7;
+  font-family: Comic Sans MS, Comic Sans;
+}
+
+header {
+  background-color: #4f4f59;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo{
+  height: 60px;
+}
+
+nav ul {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  background-color: #4f4f59;
+  font-size: 20px;
+}
+
+nav li {
+  text-align: center;
+  margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e05e12;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: repeat(3, 150px);
+  margin-top: 10px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  color: white;
+  font-size: 28px;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  background-image: url('https://klike.net/uploads/posts/2023-01/1674539139_2-3.jpg');
+}
+
+.grid-item:nth-child(2) {
+  grid-row: 1 / 3;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  background-image: url('https://orenburzhie.ru/wp-content/uploads/2023/01/5ff7d6b267965aa5278f64405d10d89c.jpg');
+}
+
+.grid-item:nth-child(3) {
+  grid-row: 2 / 4;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  background-image: url('https://www.m24.ru/b/d/nAgWUB67nUJkzJ7jP6aC_5PznYbt-dvtg32Qhv2YqzbZJC3PU2mcy3ou4cNb8QfTuNGV_CeILNx_SL-4hSMhMXXfqDgJqgjJnSrxUBPiuy9YKH1Ypyom2ybiaByXQz5QEreaOfg=JjBrJTeDHUnN94EVkV-idA.jpg'); 
+}
+
+.grid-item:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  background-image: url("https://i.dailymail.co.uk/1s/2019/03/16/16/11078622-6816361-image-a-12_1552753495129.jpg");
+}
+
+.grid-item:nth-child(5) {
+  grid-column: 2 / 5;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  background-image: url("https://lindeal.com/ld/images/2022/10/3-faktora-kotorye-vliyayut-na-skorost-chastnogo-samoleta.png");
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  color:#e05e12;
+}
+
+.contact-form {
+  display: grid;
+  background-color: #f9f9f9;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form-row:nth-child(5) {
+  grid-column: 1 / 3;
+}
+
+.form-row:nth-child(6) {
+  grid-column: 1 / 3;
+}
+
+.orderText {
+  font-size: 25px;
+  color: white;
+  background-color: #4f4f59;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.input-container label {
+  flex: 1;
+  margin-right: 10px;
+  text-align: right;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+button {
+  background-color: #e05e12;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f7803b;
+}
+
+footer {
+  background-color: #4f4f59;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.social-buttons {
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    display: flex; 
+    justify-content: space-between;
+    grid-column-start: 2;
+}
+
+.sub-button {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.sub-button:hover {
+  background-color: transparent;
+  background-size: cover;
+  transform: scale(1.2);
+}
+
+.youtube:hover {
+    background-image: linear-gradient(to bottom, red, transparent);
+}
+
+.vk:hover {
+    background-image: linear-gradient(to bottom, blue, transparent);
+}
+
+.twitter:hover {
+    background-image: linear-gradient(to bottom, skyblue, transparent);
+}
+
+.button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.button img{
+    width: 70%;
+    left: 15%;
+    height: 70%;
+    top: 15%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.social-button:hover::before {
+    opacity: 1;
+}
+
+
+table {
+  background-color: #4f4f59;
+  border-collapse: separate;
+  border-spacing:10px 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  width: 100%;
+  color: grey;
+}
+
+.weatherIco{
+  width: 50%;
+  height: 50%;
+  margin-left: 7%;
+  margin-top: 10%;
+}
+
+.humidityIco, .pressureIco, .windIco{
+  width: 15%;
+  height: 15%;
+  float: left;
+  margin-left: 5%;
+}
+
+.humidity, .pressure, .wind{
+  margin-top: 50px;
+  text-align: right;
+  margin-right: 5%;
+  color:black;
+}
+
+th {
+  color: white;
+}
+
+td {
+  border-radius: 10px;
+  width: 10%;
+  position: relative;
+
+}
+
+.day {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  z-index: 9;
+}
+
+.week_cell .day{
+  position: absolute;
+  top: -2%;
+  left: 5%;
+  z-index: 9;
+}
+
+.day_temp {
+  position: absolute;
+  color: black;
+  top: 0%;
+  right: 5%;
+}
+
+.week_cell .night_temp {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.month_cell .night_temp {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+}
+
+tr:nth-child(even) td {
+  background-color: #E6FFFD;
+}
+
+tr:nth-child(odd) td {
+  background-color: white;
+}
+
+.comparison {
+  background-color: #4f4f59;
+  color: white;
+  font-size: 25px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.news-container .newsTitle, .newsText{
+  margin-left: 2%;
+}
+
+.newsTitle {
+  text-align: center;
+}
+
+.news-container {
+  padding-top: 10px;
+  background-color: #b5b5b5;
+}
+    
+.news-image {
+  float: right;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 200px;
+}
+
+.likeSection{
+  width: 50px;
+  position: relative;
+  margin-left: 2%;
+}
+
+#likeCount{
+  position: absolute; 
+  top: 10px; 
+  left:17px;
+  color: pink; 
+  cursor: default;
+}
+
+#likeBtn{
+  width: 50px; 
+  border: 5px; 
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 1100px){
+  p {
+    font-size: 30px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .orderText {
+    font-size: 35px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    font-size: 30px;
+    grid-column: 1 / 2;
+  }
+
+  .form-row .sendButton{
+    font-size: 36px;
+  }
+
+  .footer-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+  .footer-social {
+      margin-top: 20px;
+  }
+
+  .nav ul{
+      flex-direction: column;
+      justify-content: center;
+      font-size: 40px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: repeat(5, 400px);
+  }
+
+  .grid-item:nth-child(n) {
+    grid-column: 1 / 2;
+    grid-row-start: auto;
+    grid-column-start: auto;
+  }
+
+  table {
+    border-spacing:10px 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 100%;
+    color: grey;
+  }
+
+  .weatherIco{
+    width: 80%;
+    height: 50%;
+    margin-left: 10%;
+    margin-top: 45%;
+  }
+
+  .humidityIco, .pressureIco, .windIco{
+    width: 30%;
+    height: 15%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  th {
+    color: white;
+  }
+
+  td {
+    border-radius: 10px;
+    width: 10%;
+    position: relative;
+
+  }
+
+  .day {
+    top: -3%;
+    left: 40%;
+    right: 40%;
+    z-index: 10;
+  }
+
+  .day_temp {
+    color: black;
+    position: relative;
+    float: left;
+    left: 5%;
+  }
+
+  .week_cell .night_temp {
+    position: relative;
+    text-align: right;
+    right: 5%;
+  }
+
+  .grid-item:hover {
+    transform: scale(1, 1.05);
+    transition: 1s;
+    color:#e05e12;
+  }
+
+  .news-image {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    height: 20%;
+    margin-bottom: 2%;
+  }
+
+  .likeSection{
+    width: 150px;
+  }
+
+  #likeCount{
+    font-size: 36px;
+    top:42px; 
+    left:53px;
+  }
+
+  #likeBtn{
+    width: 150px; 
+    border: 5px; 
+  }
+
+  .social-buttons {
+    grid-column-start: 1;
+  }
+
+  .button{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+hr {
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+/* Меню бургер */
+.navBurger {
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 25px;
+  left: 3%;
+  height: 0px;
+}
+
+.navContainer {
+  width: 90%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0px;
+}
+  
+.navBurger .menu-items {
+  position: relative;
+  display: revert;
+  left: 5px;
+}
+  
+.navBurger .navContainer li {
+  list-style: none;
+  margin-top: 4%;
+}
+  
+.navBurger .navContainer a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  padding: 1rem;
+}
+  
+.navContainer {
+  display: block;
+  position: relative;
+  
+}
+  
+.navContainer .checkbox {
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 80px;
+  top: 15px;
+  left: 15px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.navBurger .menu-items {
+  background-color: #c2c2c2;
+  width: 50%;
+  transform: translate(-200%);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+  
+.navContainer .menuHamburgerLines {
+  display: block;
+  height: 64px;
+  width: 80px;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.navContainer .menuHamburgerLines .HamburgerLine {
+  display: block;
+  height: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+  
+.navContainer .menuHamburgerLines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.5s ease-in-out;
+}
+  
+.navContainer .menuHamburgerLines .line2 {
+  transition: transform 0.3s ease-in-out;
+}
+  
+.navContainer .menuHamburgerLines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease-in-out;
+}
+  
+  
+.navContainer input[type="checkbox"]:checked ~ .menuHamburgerLines .line1 {
+  background-color: black;
+  transform: rotate(45deg);
+}
+  
+.navContainer input[type="checkbox"]:checked ~ .menuHamburgerLines .line2 {
+  transform: scaleY(0);
+}
+  
+.navContainer input[type="checkbox"]:checked ~ .menuHamburgerLines .line3 {
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.navContainer input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+  
+@media screen and (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+
+  .navBurger{
+    display: inline;
+  }
+}

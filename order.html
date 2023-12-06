@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/x-icon" href="./source/ico.png">
+    <title>Заказать прогноз</title>
+</head>
+<body>
+    <header>
+        <img src="./source/logo.png" class="logo">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./today.html">Сегодня</a></li><hr>
+            <li><a href="./week.html">Неделя</a></li><hr>
+            <li><a href="./month.html">Месяц</a></li><hr>
+            <li><a href="./news.html">Новости</a></li><hr>
+            <li><a href="./order.html">Заказать услугу</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navBurger">
+        <div class="navContainer">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="menu-items">
+              <li><a href="./today.html">Сегодня</a></li>
+              <li><a href="./week.html">Неделя</a></li>
+              <li><a href="./month.html">Месяц</a></li>
+              <li><a href="./news.html">Новости</a></li>
+              <li><a href="./order.html">Заказать услугу</a></li>
+            </div>
+            <div class="menuHamburgerLines">
+              <span class="HamburgerLine line1"></span>
+              <span class="HamburgerLine line2"></span>
+              <span class="HamburgerLine line3"></span>
+            </div>  
+        </div>
+    </nav>
+
+    <main>
+        <p class="orderText">Здесь вы можете заказать более подробные метеорологические обследования конкретных мест: </p>
+        <form class="contact-form"  >
+          <div class="form-row">
+              <label for="first-name">Имя:</label>
+              <input type="text" id="first-name" name="first-name">
+          </div>
+          <div class="form-row">
+              <label for="last-name">Фамилия:</label>
+              <input type="text" id="last-name" name="last-name">
+          </div>
+          <div class="form-row">
+              <label for="phone">Телефон:</label>
+              <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-row">
+              <label for="email">Почта:</label>
+              <input type="email" id="email" name="email">
+          </div>
+          <div class="form-row">
+              <label>Подробно опишите необходимые замеры здесь:</label>
+              <input type="text" id="text" name="text">
+          </div>
+          <div class="form-row">
+            <button class="sendButton">Отправить</button>
+          </div>
+        </form>
+        <script src="scriptForm.js"></script>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="social-buttons">
+            <div class="button">
+                <button class="sub-button twitter"></button>
+                <img src="./source/twitter_ico.png">
+            </div>
+            <div class="button">
+                <button class="sub-button vk"></button>
+                <img src="./source/vk_ico.png">
+            </div>
+            <div class="button">
+                <button class="sub-button youtube"></button>
+                <img src="./source/youtube_ico.png">
+            </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
